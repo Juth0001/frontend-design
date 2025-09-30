@@ -8,21 +8,28 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @layer reset, cards;
 
 @layer cards {
+
+    .card:not(:has(img, h3)) :has(p) {
+
+        font-size: 1.25rem;
+        line-height: 1.4;
+        /* text-decoration: underline;*/
+    }
+
+    .card:not(:has(img)) :has(h3) h3 {
+        font-size: 1.6rem;
+        /*text-decoration: underline;*/
+    }
+
+    .card:has(img) img {
+        padding: 0px;
+        width: 100%;
+
+    }
+
     .cards {
         list-style: none;
         padding: 0;
@@ -51,6 +58,9 @@
 }
 
 @layer reset {
+
+
+
     * {
         box-sizing: border-box;
         margin: 0;
