@@ -15,7 +15,10 @@ html {
     --on-action-secondary: light-dark(#000, #fff);
 }
 
+
 article {
+    container: article / inline-size;
+
     padding: 1rlh;
     max-inline-size: 1200px;
     margin-inline: auto;
