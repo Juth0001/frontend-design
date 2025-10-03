@@ -1,6 +1,11 @@
+/*div {
+    container-type: inline-size;
+}*/
+
 .bento {
     display: grid;
     gap: var(--spacing-base);
+
 
     .title {
         --bg: var(--color-brand-yellow);
@@ -22,6 +27,9 @@
 }
 
 .card {
+
+    container-type: inline-size;
+
     border-radius: var(--border-radius);
     background: var(--bg);
     overflow: clip;
