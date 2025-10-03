@@ -1,2 +1,19 @@
 /* Dine styles her */
-article {}
+article {
+    margin: 0.5rlh;
+
+    >*+* {
+        margin-top: var(--flows-pace, 1rlh);
+    }
+
+    h2 {
+        --flows-pace: 2rlh;
+    }
+
+    h3:has(+ p)+p,
+    h3:has(+ p + p)+p+p {
+        color: blue;
+        --flows-pace: .25rlh
+    }
+
+}
