@@ -79,7 +79,12 @@
 
 body {
     font-family: system-ui, sans-serif;
-    margin: 4rem;
+    /*margin: 4rem;*/
+    padding-block: var(--space-m-l);
+    /* top og bund-luft */
+    padding-inline: var(--space-s-l);
+    /* siderne */
+
 }
 
 h1 {
