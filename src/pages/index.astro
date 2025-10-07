@@ -26,8 +26,9 @@ import { cardContent } from "../data/card-content.js";
             aliquip ex ea commodo consequat.
           </p>
         </header>
-
-        <ScrollingContainer cardContent={cardContent} />
+        <div class="scroll">
+          <ScrollingContainer cardContent={cardContent} />
+        </div>
       </section>
     </main>
   </body>
@@ -37,15 +38,22 @@ import { cardContent } from "../data/card-content.js";
   main {
     padding-block: 4rem; /* Kun af æstetiske årsager */
   }
+
   section {
     display: grid;
-    grid-template-columns: 1fr minmax(0, var(--content.width)) 1fr;
+    grid-template-columns: 1fr minmax(0, var(--content-width)) 1fr;
 
-    >*{
+    > * {
       grid-column: 2;
     }
-    .full{
-      grid-
-    }
+  }
+
+  .scroll {
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    /*display: flex;
+    overflow-x: auto;*/
   }
 </style>
